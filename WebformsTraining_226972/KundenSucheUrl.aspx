@@ -1,14 +1,7 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="KundenSucheUrl.aspx.vb" Inherits="WebformsTraining_226972.KundenSucheUrl" %>
 <%@ Import Namespace="Microsoft.Aspnet.FriendlyUrls" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <%      For Each item In FriendlyUrl.Segments %>
-    <%=item %>
-
-    <%Next %>
-
-    <a href="~/KundensucheUrl/Name/hannes" class="btn btn-primary" runat="server">click</a><br />
-       <a href="<%=FriendlyUrl.Href("~/KundensucheUrl", "name", User.Identity.Name) %>" class="btn btn-primary"  >click</a>
-    
+ 
     <div class="row">
         <div class="col">
             <div class="input-group mb-3">
