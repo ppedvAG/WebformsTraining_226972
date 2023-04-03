@@ -180,6 +180,7 @@
     <Content Include="Kundenliste.aspx" />
     <Content Include="Kundenliste1.aspx" />
     <Content Include="KundenlisteCollapse.aspx" />
+    <Content Include="KundenListeSQL.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -294,9 +295,18 @@
       <DependentUpon>KundenlisteCollapse.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="KundenListeSQL.aspx.designer.vb">
+      <DependentUpon>KundenListeSQL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KundenListeSQL.aspx.vb">
+      <DependentUpon>KundenListeSQL.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Models\BUCH_Technik.vb" />
     <Compile Include="Models\Categories.vb" />
     <Compile Include="Models\CustomerDemographics.vb" />
     <Compile Include="Models\Customers.vb" />
+    <Compile Include="Models\CustomerView.vb" />
     <Compile Include="Models\Employees.vb" />
     <Compile Include="Models\NorthwindContext.vb" />
     <Compile Include="Models\Orders.vb" />
