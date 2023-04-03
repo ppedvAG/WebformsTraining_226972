@@ -12,18 +12,7 @@
             </div>
         </div>
     </div>
-    <%--Suche--%>
-    <div class="row">
-        <div class="col">
-            <div class="input-group mb-3">
-                <asp:TextBox class="form-control" ID="TextBox1" runat="server"
-                    Placeholder="suche"></asp:TextBox>
-                <asp:Button ID="Button2" runat="server" Text="suche"
-                    OnClick="Button1_Click"
-                    class="btn btn-outline-secondary" />
-            </div>
-        </div>
-    </div>
+ 
 
     <div class="row">
         <div class="col">
