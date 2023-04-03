@@ -181,6 +181,7 @@
     <Content Include="Kundenliste1.aspx" />
     <Content Include="KundenlisteCollapse.aspx" />
     <Content Include="KundenListeSQL.aspx" />
+    <Content Include="KundenSucheUrl.aspx" />
     <Content Include="KundenTabelle.aspx" />
     <Content Include="LINQBeispiele.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -211,6 +212,7 @@
     <Content Include="Content\bootstrap-grid.rtl.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="libman.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -302,6 +304,13 @@
     </Compile>
     <Compile Include="KundenListeSQL.aspx.vb">
       <DependentUpon>KundenListeSQL.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="KundenSucheUrl.aspx.designer.vb">
+      <DependentUpon>KundenSucheUrl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KundenSucheUrl.aspx.vb">
+      <DependentUpon>KundenSucheUrl.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="KundenTabelle.aspx.designer.vb">
