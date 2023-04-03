@@ -8,5 +8,10 @@
 
         Dim db = New NorthwindContext
         Return db.Customers
+
+        ' Dim tmp = db.Customers.Include("Orders")
+        'Lacy Loading
+
+
     End Function
 End Class
