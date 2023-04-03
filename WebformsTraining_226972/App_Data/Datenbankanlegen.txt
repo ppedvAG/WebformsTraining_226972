@@ -1,0 +1,12 @@
+﻿App_Data Rechts klick 
+--neue Datenbank (name standard)
+-northwind.mdf
+-doppelclick
+-links Server Explorer
+-auf Datenbak Rechts Klick neue Abfrage
+https://github.com/microsoft/sql-server-samples/blob/master/samples/databases/northwind-pubs/instnwnd.sql#
+entfernen
+if exists (select * from sysdatabases where name='Northwind')
+		drop database Northwind
+go
+copy paste sql ausführen

@@ -11,14 +11,14 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class SiteMaster
+Partial Public Class Kundenliste
 
     '''<summary>
-    '''MainContent-Steuerelement.
+    '''Repeater1-Steuerelement.
     '''</summary>
     '''<remarks>
     '''Automatisch generiertes Feld.
     '''Zum Ändern Felddeklaration aus der Designerdatei in eine Code-Behind-Datei verschieben.
     '''</remarks>
-    Protected WithEvents MainContent As Global.System.Web.UI.WebControls.ContentPlaceHolder
+    Protected WithEvents Repeater1 As Global.System.Web.UI.WebControls.Repeater
 End Class
