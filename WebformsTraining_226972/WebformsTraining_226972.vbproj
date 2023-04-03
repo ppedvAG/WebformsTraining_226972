@@ -179,6 +179,7 @@
     <Content Include="Global.asax" />
     <Content Include="Kundenliste.aspx" />
     <Content Include="Kundenliste1.aspx" />
+    <Content Include="KundenlisteCollapse.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -284,6 +285,13 @@
     </Compile>
     <Compile Include="Kundenliste1.aspx.vb">
       <DependentUpon>Kundenliste1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="KundenlisteCollapse.aspx.designer.vb">
+      <DependentUpon>KundenlisteCollapse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KundenlisteCollapse.aspx.vb">
+      <DependentUpon>KundenlisteCollapse.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Models\Categories.vb" />

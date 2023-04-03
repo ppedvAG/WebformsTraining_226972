@@ -24,7 +24,7 @@
                         <li class="list-group-item">
 
                             <%#Item.CompanyName %>
-                            <span class="float-end "><%#Item.Orders.Count %></span>
+                            <span class="float-end badge text-bg-primary"><%#Item.Orders.Count %></span>
 
                         </li>
 
