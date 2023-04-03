@@ -181,6 +181,7 @@
     <Content Include="Kundenliste1.aspx" />
     <Content Include="KundenlisteCollapse.aspx" />
     <Content Include="KundenListeSQL.aspx" />
+    <Content Include="KundenTabelle.aspx" />
     <Content Include="LINQBeispiele.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -301,6 +302,13 @@
     </Compile>
     <Compile Include="KundenListeSQL.aspx.vb">
       <DependentUpon>KundenListeSQL.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="KundenTabelle.aspx.designer.vb">
+      <DependentUpon>KundenTabelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KundenTabelle.aspx.vb">
+      <DependentUpon>KundenTabelle.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="LINQBeispiele.aspx.designer.vb">
