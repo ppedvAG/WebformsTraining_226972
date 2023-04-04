@@ -15,7 +15,7 @@
 
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-
+    <link href="~/Content/bootstrap-sortable.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
@@ -65,6 +65,9 @@
     </form>
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/Scripts/bootstrap.js") %>
-    </asp:PlaceHolder>
+     
+    </asp:PlaceHolder>  
+    <script src="Scripts/moment.js"></script>
+        <script src="Scripts/bootstrap-sortable.js"></script>
 </body>
 </html>

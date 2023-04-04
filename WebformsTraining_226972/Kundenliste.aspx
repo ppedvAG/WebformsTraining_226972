@@ -4,7 +4,7 @@
 
 
 
-    <table class="table">
+    <table class="table sortable">
 
         <thead>
             <tr>
@@ -28,4 +28,5 @@
             </asp:Repeater>
         </tbody>
     </table>
+         https://github.com/drvic10k/bootstrap-sortable
 </asp:Content>
