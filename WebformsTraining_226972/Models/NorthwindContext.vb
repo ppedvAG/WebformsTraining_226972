@@ -20,6 +20,9 @@ Partial Public Class NorthwindContext
     Public Overridable Property Region As DbSet(Of Region)
     Public Overridable Property Shippers As DbSet(Of Shippers)
     Public Overridable Property Suppliers As DbSet(Of Suppliers)
+    Public Overridable Property Buch_Techniks As DbSet(Of BUCH_Technik)
+    Public Overridable Property BUCH_Technik_Auswahls As DbSet(Of BUCH_Technik_Auswahl)
+
     Public Overridable Property Territories As DbSet(Of Territories)
 
     Protected Overrides Sub OnModelCreating(ByVal modelBuilder As DbModelBuilder)

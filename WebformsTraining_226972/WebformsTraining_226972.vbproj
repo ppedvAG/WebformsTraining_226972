@@ -156,6 +156,7 @@
     <Content Include="App_Data\sqlScriptnorthwind.txt" />
     <Content Include="Bestellungen.aspx" />
     <Content Include="Bootstrap.aspx" />
+    <Content Include="BuchTech.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -277,6 +278,13 @@
     </Compile>
     <Compile Include="Bootstrap.aspx.vb">
       <DependentUpon>Bootstrap.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BuchTech.aspx.designer.vb">
+      <DependentUpon>BuchTech.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BuchTech.aspx.vb">
+      <DependentUpon>BuchTech.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Contact.aspx.designer.vb">
@@ -470,6 +478,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="NewFolder1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
