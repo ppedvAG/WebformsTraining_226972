@@ -20,6 +20,19 @@ Public Class kundenedit
 
         Return d
     End Function
+    Public Function LadeOrte1() As Dictionary(Of String, String)
+        Dim o = db.Customers
+
+        Dim q = From x In o
+                Select key = x.City, value = x.City
+                Distinct
+        Dim d = q.ToDictionary(Function(x) x.key, Function(x) x.value)
+
+        ' DataTextField = "Value" DataValueField="Key"
+
+
+        Return d
+    End Function
     ' Der ID-Parameter sollte dem DataKeyNames-Wert entsprechen, der für das Steuerelement
     ' festgelegt wurde, oder mit einem Wertanbieterattribut versehen werden, z. B. <QueryString>ByVal id as Integer
     Public Function FormView1_GetItem(<FriendlyUrlSegments(0)> id As String) As WebformsTraining_226972.Customers
