@@ -14,11 +14,11 @@ Partial Public Class Customers
     <StringLength(5)>
     Public Property CustomerID As String
 
-    <Required>
-    <StringLength(40)>
+    <Required(ErrorMessage:="da muss was rein")>
+    <StringLength(40, ErrorMessage:="Max 40 Zeichen")>
     Public Property CompanyName As String
 
-    <StringLength(30)>
+    <StringLength(30, ErrorMessage:="max 30 Zeichen")>
     Public Property ContactName As String
 
     <StringLength(30)>

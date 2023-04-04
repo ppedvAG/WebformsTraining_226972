@@ -179,6 +179,7 @@
     <Content Include="Global.asax" />
     <Content Include="GridviewDemo.aspx" />
     <Content Include="GridviewModelbinding.aspx" />
+    <Content Include="kundenedit.aspx" />
     <Content Include="Kundenliste.aspx" />
     <Content Include="Kundenliste1.aspx" />
     <Content Include="KundenlisteCollapse.aspx" />
@@ -298,6 +299,13 @@
     </Compile>
     <Compile Include="GridviewModelbinding.aspx.vb">
       <DependentUpon>GridviewModelbinding.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kundenedit.aspx.designer.vb">
+      <DependentUpon>kundenedit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kundenedit.aspx.vb">
+      <DependentUpon>kundenedit.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Kundenliste.aspx.designer.vb">
