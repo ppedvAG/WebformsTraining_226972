@@ -34,6 +34,19 @@
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Da muss auch was rein" ControlToValidate="Textbox2"></asp:RequiredFieldValidator>
                     </div>
                 </div>
+                 <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">City</label>
+                    <div class="col-sm-10">
+
+                       
+                        <asp:DropDownList runat="server" class="form-control" SelectedValue="<%#BindItem.City %>" ID="drpOrte"
+                            SelectMethod="LadeOrte"
+                            > 
+                            <asp:ListItem Text="84489 Burghausen" Value=""></asp:ListItem>
+
+                        </asp:DropDownList>
+                          </div>
+                </div>
             </div>
             <asp:ValidationSummary ID="ValidationSummary1" runat="server" class="" />
 

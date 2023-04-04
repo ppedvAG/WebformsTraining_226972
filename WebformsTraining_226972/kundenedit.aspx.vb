@@ -3,10 +3,23 @@
 Public Class kundenedit
     Inherits System.Web.UI.Page
     Dim db As NorthwindContext = New NorthwindContext
+    Dim orte As List(Of String)
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
     End Sub
 
+    Public Function LadeOrte() As List(Of String)
+        Dim o = db.Customers
+
+        Dim q = From x In o
+                Select ort = x.City
+                Distinct
+        Dim d = q.ToList
+
+
+
+        Return d
+    End Function
     ' Der ID-Parameter sollte dem DataKeyNames-Wert entsprechen, der für das Steuerelement
     ' festgelegt wurde, oder mit einem Wertanbieterattribut versehen werden, z. B. <QueryString>ByVal id as Integer
     Public Function FormView1_GetItem(<FriendlyUrlSegments(0)> id As String) As WebformsTraining_226972.Customers
@@ -17,6 +30,9 @@ Public Class kundenedit
     Public Sub FormView1_UpdateItem(ByVal CustomerID As String)
         Dim item As WebformsTraining_226972.Customers = Nothing
         ' Element hier laden, z. B. item = MyDataLayer.Find(id)
+        'If CustomerID == "0" Then
+        '    Dim item = New WebformsTraining_226972.Customers()
+        'End If
         item = db.Customers.Find(CustomerID)
         If item Is Nothing Then
             ' Das Element wurde nicht gefunden.
@@ -26,7 +42,7 @@ Public Class kundenedit
         TryUpdateModel(item)
         If ModelState.IsValid Then
             ' Änderungen hier speichern, z. B. MyDataLayer.SaveChanges()
-            item.City = DateTime.Now.ToShortDateString
+            '  item.City = DateTime.Now.ToShortDateString
             db.SaveChanges()
         End If
     End Sub
