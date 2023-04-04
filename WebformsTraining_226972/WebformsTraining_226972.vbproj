@@ -177,6 +177,7 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="GridviewDemo.aspx" />
     <Content Include="Kundenliste.aspx" />
     <Content Include="Kundenliste1.aspx" />
     <Content Include="KundenlisteCollapse.aspx" />
@@ -282,6 +283,13 @@
     </Compile>
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GridviewDemo.aspx.designer.vb">
+      <DependentUpon>GridviewDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GridviewDemo.aspx.vb">
+      <DependentUpon>GridviewDemo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Kundenliste.aspx.designer.vb">
       <DependentUpon>Kundenliste.aspx</DependentUpon>
