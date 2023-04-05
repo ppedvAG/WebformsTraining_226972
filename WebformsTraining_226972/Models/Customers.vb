@@ -3,6 +3,8 @@ Imports System.Collections.Generic
 Imports System.ComponentModel.DataAnnotations
 Imports System.ComponentModel.DataAnnotations.Schema
 Imports System.Data.Entity.Spatial
+Imports System.Runtime.Serialization
+Imports Newtonsoft.Json
 
 Partial Public Class Customers
     Public Sub New()
@@ -44,8 +46,10 @@ Partial Public Class Customers
 
     <StringLength(24)>
     Public Property Fax As String
-
+    <JsonIgnore>
+    <IgnoreDataMember>
     Public Overridable Property Orders As ICollection(Of Orders)
-
+    <JsonIgnore>
+    <IgnoreDataMember>
     Public Overridable Property CustomerDemographics As ICollection(Of CustomerDemographics)
 End Class

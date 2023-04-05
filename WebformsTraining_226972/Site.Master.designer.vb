@@ -21,4 +21,13 @@ Partial Public Class SiteMaster
     '''Zum Ändern Felddeklaration aus der Designerdatei in eine Code-Behind-Datei verschieben.
     '''</remarks>
     Protected WithEvents MainContent As Global.System.Web.UI.WebControls.ContentPlaceHolder
+
+    '''<summary>
+    '''ContentPlaceHolderScripte-Steuerelement.
+    '''</summary>
+    '''<remarks>
+    '''Automatisch generiertes Feld.
+    '''Zum Ändern Felddeklaration aus der Designerdatei in eine Code-Behind-Datei verschieben.
+    '''</remarks>
+    Protected WithEvents ContentPlaceHolderScripte As Global.System.Web.UI.WebControls.ContentPlaceHolder
 End Class

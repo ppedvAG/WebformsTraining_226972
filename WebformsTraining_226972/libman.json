@@ -1,5 +1,11 @@
 {
   "version": "1.0",
   "defaultProvider": "cdnjs",
-  "libraries": []
+  "libraries": [
+    {
+      "provider": "unpkg",
+      "library": "jquery.autocomplete@1.2.0",
+      "destination": "lib/jquery.autocomplete/"
+    }
+  ]
 }

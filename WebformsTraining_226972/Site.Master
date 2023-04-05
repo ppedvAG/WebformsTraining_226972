@@ -69,5 +69,10 @@
     </asp:PlaceHolder>  
     <script src="Scripts/moment.js"></script>
         <script src="Scripts/bootstrap-sortable.js"></script>
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderScripte" runat="server">
+
+
+    </asp:ContentPlaceHolder>
 </body>
 </html>
