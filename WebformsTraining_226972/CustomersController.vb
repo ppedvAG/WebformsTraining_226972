@@ -10,19 +10,17 @@ Public Class CustomersController
     'End Function
 
     ' GET api/<controller>/5
-    Public Function GetValue(ByVal id As String) As List(Of Autocomplete1)
+    Public Function GetValue(ByVal id As String) As List(Of Autocomplete)
 
         Dim db = New NorthwindContext
 
 
-        Dim o = db.Customers
+        Dim o = db.Customers.Where(Function(x) x.CompanyName.Contains(id))
 
-        'Dim q = From x In o
-        '        Select New KeyValuePair(Of String, String)(x.CustomerID, x.CompanyName)
-        '        Distinct
-        Dim liste As New List(Of Autocomplete1)
+
+        Dim liste As New List(Of Autocomplete)
         For Each x In o
-            liste.Add(New Autocomplete1 With {.value = x.CustomerID, .data = x.CompanyName})
+            liste.Add(New Autocomplete With {.value = x.CustomerID, .data = x.CompanyName})
         Next
 
         Return liste
@@ -43,7 +41,7 @@ Public Class CustomersController
 
     End Sub
 End Class
-Public Class Autocomplete1
+Public Class Autocomplete
     Public Property value As String
     Public Property data As String
 End Class
