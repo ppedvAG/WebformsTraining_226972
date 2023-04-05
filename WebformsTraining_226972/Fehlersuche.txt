@@ -1,5 +1,5 @@
 ﻿Visual Studio
--debuggen
+-debuggen F5 F9 Breakpoint - 
 Betrieb IIS
 -remote debug bzw attach to process
  <system.web>
