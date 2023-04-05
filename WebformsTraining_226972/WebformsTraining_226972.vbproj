@@ -186,6 +186,7 @@
     <Content Include="GridviewDemo.aspx" />
     <Content Include="GridviewModelbinding.aspx" />
     <Content Include="Kalender.aspx" />
+    <Content Include="KalenderCols.aspx" />
     <Content Include="kundenedit.aspx" />
     <Content Include="Kundenliste.aspx" />
     <Content Include="Kundenliste1.aspx" />
@@ -356,6 +357,13 @@
     </Compile>
     <Compile Include="Kalender.aspx.vb">
       <DependentUpon>Kalender.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="KalenderCols.aspx.designer.vb">
+      <DependentUpon>KalenderCols.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KalenderCols.aspx.vb">
+      <DependentUpon>KalenderCols.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="kundenedit.aspx.designer.vb">
