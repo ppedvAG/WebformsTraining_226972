@@ -6,7 +6,7 @@
     End Sub
 
     Public Function Repeater1_GetData() As IEnumerable(Of Customers)
-
+        Dim i = 1
         Dim db = New NorthwindContext
         Return db.Customers
     End Function

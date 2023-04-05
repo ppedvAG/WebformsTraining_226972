@@ -1,0 +1,13 @@
+﻿Visual Studio
+-debuggen
+Betrieb IIS
+-remote debug bzw attach to process
+ <system.web>
+    <compilation debug="true"
+-Ereignisanzeige
+-Trace.axd
+-<%@ Page Title=""
+    Trace="true" 
+     <system.web>
+    <compilation debug="true" strict="false" explicit="true" targetFramework="4.8" />
+	  <trace enabled="true" />

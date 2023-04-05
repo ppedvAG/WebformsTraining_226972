@@ -178,6 +178,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
+    <Content Include="Fehlersuche.txt" />
     <Content Include="Global.asax" />
     <Content Include="GridviewDemo.aspx" />
     <Content Include="GridviewModelbinding.aspx" />
